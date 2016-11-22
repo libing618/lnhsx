@@ -1,0 +1,11 @@
+[
+{"fID":"t001","fSecondID":"s001","fClassName":"汾西核桃仁","fClassImg":"./class/img/pic1.png"},
+{"fID":"t002","fSecondID":"s001","fClassName":"汾西鲜核桃","fClassImg":"./class/img/pic2.png"},
+{"fID":"t003","fSecondID":"s001","fClassName":"枣夹核桃","fClassImg":"./class/img/pic3.png"},
+{"fID":"t008","fSecondID":"s002","fClassName":"汾西核桃仁","fClassImg":"./class/img/pic1.png"},
+{"fID":"t009","fSecondID":"s002","fClassName":"汾西鲜核桃","fClassImg":"./class/img/pic2.png"},
+{"fID":"t010","fSecondID":"s002","fClassName":"枣夹核桃","fClassImg":"./class/img/pic3.png"},
+{"fID":"t013","fSecondID":"s003","fClassName":"有机黑小米","fClassImg":"./class/img/pic4.png"},
+{"fID":"t016","fSecondID":"s004","fClassName":"汾西苦荞茶","fClassImg":"./class/img/pic5.png"},
+{"fID":"t018","fSecondID":"s005","fClassName":"枣夹核桃","fClassImg":"./class/img/pic3.png"}
+]

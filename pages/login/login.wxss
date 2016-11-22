@@ -1,0 +1,77 @@
+.page {
+    background-image: url("../../images/zgf2.jpg");
+    background-size: 100%;
+    color: #222;
+}
+.login-button {
+    background: #fed52f;
+    color: #222;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 350rpx 0;
+  align-items: center;
+  background: #f9f027;
+}
+.userinfo-avatar {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #333;
+}
+.section__ctn{
+    text-align: center;
+}
+
+.section__left{
+    text-align: left;
+}
+.image{
+    width: 580rpx;
+    height: 208rpx;
+}
+
+
+/* 参考页面 https://weui.io/0.4.x/#/cell */ 
+.flex-wrp{
+  height: 44px;
+  display:flex;
+  background-color: #FFFFFF;
+}
+
+.flex-item{
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.flex-item-label{
+  width: 210rpx;
+  height: 88rpx;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item-button{
+  width: 200rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weui_cells_title {
+    margin-top: .77em;
+    margin-bottom: .9em;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #888;
+}
+
