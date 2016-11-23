@@ -1,0 +1,8 @@
+[
+{"fID":"s001","fRootID":"r001","fClassName":"为您推荐"},
+{"fID":"s002","fRootID":"r003","fClassName":"干果"},
+{"fID":"s003","fRootID":"r002","fClassName":"五谷"},
+{"fID":"s004","fRootID":"r004","fClassName":"饮品"},
+{"fID":"s005","fRootID":"r004","fClassName":"零食"}
+
+]

@@ -1,0 +1,17 @@
+<view class="container">
+   <image src="{{brandList.fImgs.url}}" class="brand-image"/>
+
+    <view class="brand_item" style="display: block;">
+        <text class="name">{{brandList.fTitle}} \n</text>
+        <text class="brief">邮费：{{brandList.fPostage}} \n 库存：{{brandList.fRecord}} \n</text>
+        <text class="price">￥{{brandList.fPrice}}元/件起</text>
+    </view>
+<button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item  bindtap="bind{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel >取消</action-sheet-cancel>
+</action-sheet>
+
+</view>
