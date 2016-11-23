@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/classify/classify",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/brand/brand",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "乐农汇",
+    "navigationBarBackgroundColor": "#292929",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#292929",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/lnh.png",
+      "selectedIconPath": "images/lnh_HL.png",
+      "text": "支持"
+    }, {
+      "pagePath": "pages/classify/classify",
+      "iconPath": "images/spfl.png",
+      "selectedIconPath": "images/spfl_HL.png",
+      "text": "分类"
+    }, {
+      "pagePath": "pages/cart/cart",
+      "iconPath": "images/gwc.png",
+      "selectedIconPath": "images/gwc_HL.png",
+      "text": "购物车"
+    }, {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/wdzc.png",
+      "selectedIconPath": "images/wdzc_HL.png",
+      "text": "我的"
+    }]
+  },
+  "debug": true
+}
