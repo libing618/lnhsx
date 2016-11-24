@@ -34,6 +34,9 @@ page{
     margin: 20rpx 0;
     color: #939393;
     line-height: 22px;
+<<<<<<< HEAD
+}
+=======
 }
 /*商品加减按钮*/
 /*stepper容器*/
@@ -95,3 +98,4 @@ page{
 	border-top: 1px solid #eee;
 	background: white;
 }
+>>>>>>> lnhsx-1-2

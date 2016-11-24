@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="page">
     <view class="page_hd ">
         <view class="section section_ctn" style="position:center">
@@ -45,4 +46,53 @@
         </form>
     </view>
 
+=======
+<view class="page">
+    <view class="page_hd ">
+        <view class="section section_ctn" style="position:center">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class="page_body" > 
+        <form class="" catchsubmit="formSubmit" catchreset="formReset">
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item">
+                <text>手机号:  </text>
+                <input name="phone" type="test" value="{{phone}}" bindinput="phoneDataChange"/>
+            </view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" style="width:260px;">
+                <text>密  码:  </text>
+                <input name="captcha" type="test" password="true" value="{{captcha}}" bindinput="captchaDataChange"/>
+            </view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item" style="width:500rpx;">
+                <input name="code" placeholder="短信验证码" value="{{code}}"  class="login-button"/>
+            </view>
+            <view class="flex-item-button" bindtap="getVerifyCode">
+                <label>
+                    <text>获取验证码</text>
+                </label>
+            </view>
+        </view>
+        
+            <view class="section" style="margin-top:40rpx; margin-left:12rpx" bindChange="checkboxChange">
+                <checkbox name="agree"> 我已经阅读并同意
+                    <text style="color: #fed52f;">《用户注册服务协议》</text> 
+                </checkbox>
+            </view>
+            <view class="btn-area">
+                <button form-type="submit" >登录</button>
+            </view>
+            
+        </form>
+    </view>
+
+>>>>>>> lnhsx-1-2
 </view>

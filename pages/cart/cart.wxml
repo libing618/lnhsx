@@ -1,4 +1,13 @@
 <view class="container">
   <image src="{{cartImg}}" class="cart-image"/>
   <view>{{tipWords}}</view>
+<<<<<<< HEAD
+
+  <view class="cart">
+    <text class="total">购物车：{{cartTotal}}</text>
+  </view>
+
+  <loading hidden="{{hidden}}">玩命加载中…</loading>
+=======
+>>>>>>> lnhsx-1-2
 </view>
