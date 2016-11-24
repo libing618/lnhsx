@@ -12,11 +12,11 @@
           <view>
 	          <view class="stepper">
 				<!-- 减号 -->
-				<text class="{{minusStatuses[index]}}" data-index="{{index}}" bindtap="bindMinus">-</text>
+				<text class="{{minusStatuse}}" bindtap="bindMinus">-</text>
 				<!-- 数值 -->
-				<input type="number" data-index="{{index}}" bindchange="bindManual" value="{{fQuantity}}" />
+				<input type="number" bindchange="bindManual" value="{{fQuantity}}" />
 				<!-- 加号 -->
-				<text class="normal" data-index="{{index}}" bindtap="bindPlus">+</text>
+				<text class="normal" bindtap="bindPlus">+</text>
 			  </view>
 		  </view>
           <action-sheet-item >确定</action-sheet-item>

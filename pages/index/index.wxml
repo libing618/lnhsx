@@ -1,53 +1,56 @@
 <!--index.wxml-->
 <view class="container">
-    <view>
-        <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-            <block wx:for="{{img}}" wx:key="updatedAt">
-                <swiper-item>
-                    <image src="{{item.fImgdata}}" class="slide-image"/>
-                    <view class="cetext" style=" font-size:28rpx"> {{item.fTitle}} </view>
-                </swiper-item>
-            </block>
-        </swiper>
-    </view>
-
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>关爱主题</text>
-    </view>
-    <view class="choice_box">
-        <view class="choice_list">
-            <block wx:for="{{choiceItems}}">
-                <navigator url="../details/details?id={{item.id}}">
-                    <view class="choice_item">
-                        <image src="{{item.goodspics}}"/>
-                        <view class="title">{{item.title}}</view>
-                    </view>
-                </navigator>
-            </block>
+    <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+            class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">
+        <view>
+            <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{img}}" wx:key="updatedAt">
+                    <swiper-item>
+                        <image src="{{item.fImgdata}}" class="slide-image"/>
+                        <view class="cetext" style=" font-size:28rpx"> {{item.fTitle}} </view>
+                    </swiper-item>
+                </block>
+            </swiper>
         </view>
-    </view>
 
-    <view class="text">
-        <view class="line_flag"></view>
-        <text>精选产品</text>
-    </view>
-    <view class="venues_box">
-        <view class="venues_list">
-            <block wx:for="{{goods}}" wx:key="updatedAt">
-                <view class="venues_item">
-                    <navigator url="../brand/brand?idbrand={{item.objectId}}">
-                        <image src="{{item.fImgs.url}}"/>
-                        <view class="text">{{item.fTitle}}     {{item.fPrice}}元</view>
+        <view class="text">
+            <view class="line_flag"></view>
+            <text>关爱主题</text>
+        </view>
+        <view class="choice_box">
+            <view class="choice_list">
+                <block wx:for="{{choiceItems}}">
+                    <navigator url="../details/details?id={{item.id}}">
+                        <view class="choice_item">
+                            <image src="{{item.goodspics}}"/>
+                            <view class="title">{{item.title}}</view>
+                        </view>
                     </navigator>
-                </view>
-            </block>
+                </block>
+            </view>
         </view>
+
+        <view class="text">
+            <view class="line_flag"></view>
+            <text>精选产品</text>
+        </view>
+        <view class="venues_box">
+            <view class="venues_list">
+                <block wx:for="{{goods}}" wx:key="updatedAt">
+                    <view class="venues_item">
+                        <navigator url="../brand/brand?idbrand={{item.objectId}}">
+                            <image src="{{item.fImgs.url}}"/>
+                            <view class="text">{{item.fTitle}}     {{item.fPrice}}元</view>
+                        </navigator>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="body-view">
+        <loading hidden="{{loadingHidden}}" bindchange="loadingChange">
+            加载中...
+        </loading>
     </view>
-
-    <loading hidden="{{loadingHidden}}">
-        加载中...
-    </loading>
-
 </view>
