@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <view class="container">
+=======
+<!--index.wxml-->
+<view class="container">
+>>>>>>> lnhsx-1-2
     <view>
         <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
                 autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -15,7 +20,27 @@
         <view class="line_flag"></view>
         <text>关爱主题</text>
     </view>
+<<<<<<< HEAD
     
+=======
+    <view class="choice_box">
+        <view class="choice_list">
+            <block wx:for="{{choiceItems}}">
+                <navigator url="../details/details?id={{item.id}}">
+                    <view class="choice_item">
+                        <image src="{{item.goodspics}}"/>
+                        <view class="title">{{item.title}}</view>
+                    </view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+
+    <view class="text">
+        <view class="line_flag"></view>
+        <text>精选产品</text>
+    </view>
+>>>>>>> lnhsx-1-2
     <view class="venues_box">
         <view class="venues_list">
             <block wx:for="{{goods}}" wx:key="updatedAt">
@@ -29,6 +54,7 @@
         </view>
     </view>
 
+<<<<<<< HEAD
     <view class="text">
         <view class="line_flag"></view>
         <text>精选产品</text>
@@ -47,8 +73,14 @@
         </view>
     </view>
 
+=======
+>>>>>>> lnhsx-1-2
     <loading hidden="{{loadingHidden}}">
         加载中...
     </loading>
 
+<<<<<<< HEAD
 </view>
+=======
+</view>
+>>>>>>> lnhsx-1-2

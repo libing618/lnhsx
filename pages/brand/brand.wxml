@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <view class="container">
    <image src="{{brandList.fImgs.url}}" class="brand-image"/>
 
@@ -14,4 +15,32 @@
     <action-sheet-cancel >取消</action-sheet-cancel>
 </action-sheet>
 
+=======
+<view class="container">
+   <image src="{{brandList.fImgs.url}}" class="brand-image"/>
+
+    <view class="brand_item" style="display: block;">
+        <text class="name">{{brandList.fTitle}} \n</text>
+        <text class="brief">邮费：{{brandList.fPostage}} \n 库存：{{brandList.fRecord}} \n</text>
+        <text class="price">￥{{brandList.fPrice}}元/件起</text>
+    </view>
+<button type="default" bindtap="jCartTap">加入购物车</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+              <!-- 数量加减 -->
+          <view>
+	          <view class="stepper">
+				<!-- 减号 -->
+				<text class="{{minusStatuses[index]}}" data-index="{{index}}" bindtap="bindMinus">-</text>
+				<!-- 数值 -->
+				<input type="number" data-index="{{index}}" bindchange="bindManual" value="{{fQuantity}}" />
+				<!-- 加号 -->
+				<text class="normal" data-index="{{index}}" bindtap="bindPlus">+</text>
+			  </view>
+		  </view>
+          <action-sheet-item >确定</action-sheet-item>
+    <action-sheet-cancel >取消</action-sheet-cancel>
+</action-sheet>
+
+
+>>>>>>> lnhsx-1-2
 </view>
